@@ -1,0 +1,424 @@
+$text-color: rgb(74, 71, 71);
+$text-font-size: 1rem;
+
+
+.RatingBars {
+    position: relative;
+    margin: 5rem auto 0;
+
+    h4 {
+        color: $text-color;
+        background: rgba(0, 0, 0, 0.1);
+        font-size: 1.3rem;
+        font-weight: 300;
+        text-align: center;
+        padding: 5rem 0;
+    }
+
+    .ourRating-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+    }
+
+    .bars-box-container {
+        display: flex;
+        position: absolute;
+        width: 80%;
+        top: 35%;
+        left: 10%;
+
+        .bars-box {
+            width: 100%;
+
+            .bar {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                h3 {
+                    color: #fff;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    text-align: left;
+                    margin-top: 2rem;
+                    margin-bottom: .5rem;
+                }
+
+                .progress {
+                    width: 600px;
+                    background: #d6d6d6;
+                    opacity: .9;
+
+
+                    .progress-60 {
+                        height: 15px;
+                        width: 60%;
+                        background: -webkit-repeating-linear-gradient(-45deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, 0) 12px), -webkit-linear-gradient(#fff, #fff);
+
+                        -webkit-animation-name: slide;
+                        -moz-animation-name: slide;
+                        -o-animation-name: slide;
+                        animation-name: slide;
+
+                        -webkit-animation-duration: 5s;
+                        -moz-animation-duration: 5s;
+                        -o-animation-duration: 5s;
+                        animation-duration: 5s;
+
+                        -webkit-animation-timing-function: linear;
+                        -moz-animation-timing-function: linear;
+                        -o-animation-timing-function: linear;
+                        animation-timing-function: linear;
+                    }
+
+                    .progress-70 {
+                        height: 15px;
+                        width: 70%;
+                        background: -webkit-repeating-linear-gradient(-45deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, 0) 12px), -webkit-linear-gradient(#fff, #fff);
+
+                        -webkit-animation-name: slide;
+                        -moz-animation-name: slide;
+                        -o-animation-name: slide;
+                        animation-name: slide;
+
+                        -webkit-animation-duration: 5s;
+                        -moz-animation-duration: 5s;
+                        -o-animation-duration: 5s;
+                        animation-duration: 5s;
+
+                        -webkit-animation-timing-function: linear;
+                        -moz-animation-timing-function: linear;
+                        -o-animation-timing-function: linear;
+                        animation-timing-function: linear;
+                    }
+
+                    .progress-75 {
+                        height: 15px;
+                        width: 75%;
+                        background: -webkit-repeating-linear-gradient(-45deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, 0) 12px), -webkit-linear-gradient(#fff, #fff);
+
+                        -webkit-animation-name: slide;
+                        -moz-animation-name: slide;
+                        -o-animation-name: slide;
+                        animation-name: slide;
+
+                        -webkit-animation-duration: 5s;
+                        -moz-animation-duration: 5s;
+                        -o-animation-duration: 5s;
+                        animation-duration: 5s;
+
+                        -webkit-animation-timing-function: linear;
+                        -moz-animation-timing-function: linear;
+                        -o-animation-timing-function: linear;
+                        animation-timing-function: linear;
+                    }
+                }
+
+                .progress-80 {
+                    height: 15px;
+                    width: 80%;
+                    background: -webkit-repeating-linear-gradient(-45deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, 0) 12px), -webkit-linear-gradient(#fff, #fff);
+
+                    -webkit-animation-name: slide;
+                    -moz-animation-name: slide;
+                    -o-animation-name: slide;
+                    animation-name: slide;
+
+                    -webkit-animation-duration: 5s;
+                    -moz-animation-duration: 5s;
+                    -o-animation-duration: 5s;
+                    animation-duration: 5s;
+
+                    -webkit-animation-timing-function: linear;
+                    -moz-animation-timing-function: linear;
+                    -o-animation-timing-function: linear;
+                    animation-timing-function: linear;
+                }
+            }
+
+            .progress-85 {
+                height: 15px;
+                width: 85%;
+                background: -webkit-repeating-linear-gradient(-45deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, 0) 12px), -webkit-linear-gradient(#fff, #fff);
+
+                -webkit-animation-name: slide;
+                -moz-animation-name: slide;
+                -o-animation-name: slide;
+                animation-name: slide;
+
+                -webkit-animation-duration: 5s;
+                -moz-animation-duration: 5s;
+                -o-animation-duration: 5s;
+                animation-duration: 5s;
+
+                -webkit-animation-timing-function: linear;
+                -moz-animation-timing-function: linear;
+                -o-animation-timing-function: linear;
+                animation-timing-function: linear;
+            }
+        }
+
+        .progress-90 {
+            height: 15px;
+            width: 90%;
+            background: -webkit-repeating-linear-gradient(-45deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, 0) 12px), -webkit-linear-gradient(#fff, #fff);
+
+            -webkit-animation-name: slide;
+            -moz-animation-name: slide;
+            -o-animation-name: slide;
+            animation-name: slide;
+
+            -webkit-animation-duration: 5s;
+            -moz-animation-duration: 5s;
+            -o-animation-duration: 5s;
+            animation-duration: 5s;
+
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+            -o-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+
+        .progress-55 {
+            height: 15px;
+            width: 55%;
+            background: -webkit-repeating-linear-gradient(-45deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, 0) 12px), -webkit-linear-gradient(#fff, #fff);
+
+            -webkit-animation-name: slide;
+            -moz-animation-name: slide;
+            -o-animation-name: slide;
+            animation-name: slide;
+
+            -webkit-animation-duration: 5s;
+            -moz-animation-duration: 5s;
+            -o-animation-duration: 5s;
+            animation-duration: 5s;
+
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+            -o-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+
+
+        @-webkit-keyframes slide {
+            0% {
+                width: 0%;
+            }
+
+            30%,
+            60% {
+                width: 50%;
+            }
+
+            70% {
+                width: 80%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        @-moz-keyframes slide {
+            0% {
+                width: 0%;
+            }
+
+            30%,
+            60% {
+                width: 50%;
+            }
+
+            70% {
+                width: 80%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        @-o-keyframes slide {
+            0% {
+                width: 0%;
+            }
+
+            30%,
+            60% {
+                width: 50%;
+            }
+
+            70% {
+                width: 80%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes slide {
+            from {
+                width: 0%;
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 1350px) {
+    .RatingBars {
+
+        h4 {
+            padding: 4rem 0;
+        }
+
+        .bars-box-container {
+
+            .bars-box {
+                .bar {
+                    .progress {
+                        width: 470px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .RatingBars {
+
+        .bars-box-container {
+
+            .bars-box {
+                .bar {
+                    .progress {
+                        width: 370px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .RatingBars {
+        margin-top: 10rem;
+
+        h4 {
+            font-size: 1.1rem;
+        }
+
+        .ourRating-img {
+            height: 120vh;
+        }
+
+        .bars-box-container {
+            top: 20%;
+            flex-direction: column;
+
+            .bars-box {
+
+                .bar {
+                    .progress {
+                        width: 650px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 790px) {
+    .RatingBars {
+        margin: 5rem auto 0;
+
+        h4 {
+            padding: 2rem 0;
+        }
+
+        .bars-box-container {
+
+            .bars-box {
+
+                .bar {
+                    .progress {
+                        width: 550px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 676px) {
+    .RatingBars {
+        .bars-box-container {
+            .bars-box {
+
+                .bar {
+                    .progress {
+                        width: 475px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .RatingBars {
+        h4 {
+            font-size: 1rem;
+        }
+
+        .bars-box-container {
+            .bars-box {
+                .bar {
+                    .progress {
+                        width: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .RatingBars {
+        margin: 3rem auto 0;
+
+        .bars-box-container {
+            .bars-box {
+                .bar {
+                    .progress {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 385px) {
+    .RatingBars {
+        .bars-box-container {
+            .bars-box {
+                .bar {
+                    .progress {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}

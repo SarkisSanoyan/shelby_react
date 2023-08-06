@@ -1,0 +1,190 @@
+$text-color: rgb(74, 71, 71);
+$text-font-size: 1rem;
+
+
+.TourDetailPage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    text-transform: capitalize;
+    text-align: center;
+    // gap: .5rem;
+
+    .background {
+        background-image: url(../../public/images/blue-sky.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 15vh;
+    }
+
+    .tour-info {
+        color: $text-color;
+        font-size: $text-font-size;
+        padding: .5rem;
+        margin: 1rem auto;
+        font-weight: bold;
+        // border-bottom: 1px solid $text-color;
+    }
+
+    .query-info {
+        color: $text-color;
+        font-size: $text-font-size;
+        padding: .5rem;
+        margin: 1rem auto;
+        font-weight: bold;
+        // border-bottom: 1px solid $text-color;
+    }
+
+    .form_submit {
+        color: $text-color;
+        font-size: $text-font-size;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: .3rem;
+        border-radius: .3rem;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .buttons {
+            display: flex;
+        }
+
+        input[type=text] {
+            color: $text-color;
+            font-size: $text-font-size;
+            width: 600px;
+            padding: .5rem;
+            margin: .5rem;
+            border: none;
+            border-bottom: 1px dotted #000;
+        }
+
+        input[type=email] {
+            color: $text-color;
+            font-size: $text-font-size;
+            width: 600px;
+            padding: .5rem;
+            margin: .5rem;
+            border: none;
+            border-bottom: 1px dotted #000;
+        }
+
+        input[type=submit] {
+            color: whitesmoke;
+            background: #006ce4;
+            font-size: $text-font-size;
+            padding: .5rem 0;
+            margin: .2rem;
+            width: 600px;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #ffb700;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .TourDetailPage {
+
+        .tour-info {
+            font-size: .9rem;
+        }
+
+        .query-info {
+            font-size: .9rem;
+        }
+
+        .form_submit {
+            font-size: .9rem;
+
+            input[type=text] {
+                font-size: .9rem;
+                width: 400px;
+            }
+
+            input[type=email] {
+                font-size: .9rem;
+                width: 400px;
+            }
+
+            input[type=submit] {
+                font-size: .9rem;
+                width: 400px;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 517px) {
+    .TourDetailPage {
+
+        .tour-info {
+            font-size: .8rem;
+        }
+
+        .query-info {
+            font-size: .8rem;
+        }
+
+        .form_submit {
+           
+            input[type=text] {
+                font-size: .8rem;
+                width: 300px;
+            }
+
+            input[type=email] {
+                font-size: .8rem;
+                width: 300px;
+            }
+
+            input[type=submit] {
+                font-size: .8rem;
+                width: 300px;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 417px) {
+    .TourDetailPage {
+
+        .tour-info {
+            font-size: .65rem;
+        }
+
+        .query-info {
+            font-size: .65rem;
+        }
+
+        .form_submit {
+           
+            input[type=text] {
+                font-size: .65rem;
+                width: 225px;
+            }
+
+            input[type=email] {
+                font-size: .65rem;
+                width: 225px;
+            }
+
+            input[type=submit] {
+                font-size: .65rem;
+                width: 225px;
+
+            }
+        }
+    }
+}

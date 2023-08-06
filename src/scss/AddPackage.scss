@@ -1,0 +1,24 @@
+$text-color: rgb(74, 71, 71);
+$text-font-size: 1rem;
+
+
+.AddPackage {
+    position: relative;
+
+    h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 3rem;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .addPackage-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30vh;
+    }
+}

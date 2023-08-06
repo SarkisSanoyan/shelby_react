@@ -1,0 +1,172 @@
+.Header {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            cursor: pointer;
+            width: 50px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        #menu-bar {
+            display: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+
+            &:hover {
+                color: #a99e03;
+            }
+        }
+
+        nav {
+            display: flex;
+
+            a {
+                color: white;
+                font-size: 1rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                padding: 0 20px;
+                border-right: 2px solid;
+                border-color: rgba(255, 255, 255, .4);
+                position: relative;
+
+                &:hover {
+                    color: #a99e03;
+                }
+            }
+        }
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+            color: white;
+            cursor: pointer;
+            padding: 0 10px;
+            font-size: .8rem;
+        }
+
+        i:hover {
+            color: #a99e03;
+        }
+
+        p {
+            border-right: 2px solid;
+            border-color: rgba(255, 255, 255, .4);
+            padding-right: 20px;
+            color: white;
+            font-weight: 700;
+        }
+    }
+
+    .NavBarOnScroll {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+
+        img {
+            width: 50px;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+
+            a {
+                color: black;
+                font-size: 1rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding: 0 20px;
+                position: relative;
+
+                &:hover {
+                    color: #a99e03;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .Header {
+        position: fixed;
+        background: #222;
+        padding: 40px 30px;
+        z-index: 1000;
+        opacity: .8;
+
+        .inner {
+            #menu-bar {
+                display: flex;
+            }
+
+            .logo {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                padding: 0 40px 30px 40px;
+                display: block;
+                background: #222;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+                a {
+                    display: block;
+                    border: 0;
+                    border-bottom: 1px solid rgba(255, 255, 255, .345);
+                    margin: .5rem;
+                    padding: .5rem;
+                    font-weight: normal;
+                }
+            }
+
+            .active {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+
+        .NavBarOnScroll {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .Header {
+        .info {
+            display: none;
+        }
+    }
+}

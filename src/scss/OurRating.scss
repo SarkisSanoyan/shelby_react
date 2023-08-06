@@ -1,0 +1,169 @@
+$text-color: rgb(74, 71, 71);
+$text-font-size: 30px;
+
+@mixin selection {
+    ::selection {
+        @content;
+    }
+}
+
+
+.OurRating {
+    margin: 5rem auto;
+    position: relative;
+
+    h2 {
+        color: #fff;
+        font-size: $text-font-size;
+        text-align: center;
+        padding: 4rem 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @include selection {
+        color: #fff;
+        background: #a99e03;
+    }
+
+    .ourRating-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+    }
+
+    .ourRating-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 30%;
+
+        .everyRating {
+            width: 24%;
+        }
+
+        .info {
+            text-align: center;
+        }
+
+        span {
+            font-size: 130px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        h3 {
+            color: #fff;
+            font-size: 18px;
+            margin: 20px auto;
+        }
+
+        p {
+            color: #fff;
+            font-size: 15px;
+            line-height: 27px;
+            width: 100%;
+        }
+    }
+
+    h4 {
+        color: $text-color;
+        background: rgba(0, 0, 0, 0.1);
+        font-size: 1.3rem;
+        font-weight: 300;
+        padding: 2rem 0;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 1350px) {
+    .OurRating {
+        .ourRating-box {
+            .everyRating {
+                width: 20%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .OurRating {
+
+        .ourRating-img {
+            height: 120vh;
+        }
+
+        .ourRating-box {
+            top: 25%;
+            flex-wrap: wrap;
+
+            .everyRating {
+                width: 35%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .OurRating {
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .OurRating {
+        margin: 5rem auto;
+
+        h2 {
+            font-size: 24px;
+            padding: 1rem 0;
+        }
+
+        .ourRating-box {
+            top: 10%;
+
+            .everyRating {
+                width: 80%;
+            }
+
+            span {
+                font-size: 80px;
+            }
+
+            h3 {
+                margin: 2px auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .OurRating {
+        h2 {
+            font-size: 21px;
+        }
+
+        .ourRating-box {
+            .everyRating {
+                h3 {
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+
+                p {
+                    font-size: 13px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        h4 {
+            font-size: 17px;
+            line-height: 27px;
+        }
+    }
+}

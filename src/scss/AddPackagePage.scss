@@ -1,0 +1,299 @@
+$text-color: rgb(74, 71, 71);
+$text-font-size: 1rem;
+
+
+.AddPackagePage {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+
+    .form-submit {
+        background-color: #006ce4;
+        color: #fff;
+        margin: 1rem auto;
+        padding: 1rem;
+        width: 75%;
+        border-radius: .3rem;
+        position: relative;
+
+        ul {
+            position: absolute;
+            width: 550px;
+            max-height: 180px;
+            overflow-y: scroll;
+
+            li {
+                list-style-type: none;
+                color: $text-color;
+                background-color: whitesmoke;
+                font-size: $text-font-size;
+                padding: .3rem;
+                text-align: left;
+                border-bottom: 1px solid $text-color;
+                border-radius: .3rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $text-color;
+                    color: whitesmoke;
+                }
+            }
+        }
+
+        .search-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .transport-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        input[type=text] {
+            width: 550px;
+            color: $text-color;
+            font-size: $text-font-size;
+            border-radius: .3rem;
+            padding: .3rem;
+            margin: .3rem 0;
+            outline: none;
+            border: none;
+        }
+
+        input[type=submit] {
+            color: $text-color;
+            background: #fff;
+            font-size: $text-font-size;
+            padding: .5rem;
+            margin: 1rem auto;
+            border-radius: .3rem;
+            width: 100%;
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #ffb700;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1350px) {
+    .AddPackagePage {
+
+        .form-submit {
+
+            ul {
+                width: 450px;
+            }
+
+            input[type=text] {
+                width: 450px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .AddPackagePage {
+
+        .form-submit {
+
+            ul {
+                width: 400px;
+            }
+
+            input[type=text] {
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    .AddPackagePage {
+
+        .form-submit {
+
+            ul {
+                width: 350px;
+            }
+
+            input[type=text] {
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .AddPackagePage {
+
+        .form-submit {
+
+            ul {
+                width: 300px;
+            }
+
+            input[type=text] {
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .AddPackagePage {
+        .form-submit {
+
+            ul {
+                width: 250px;
+            }
+
+            input[type=text] {
+                width: 250px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .AddPackagePage {
+
+        .form-submit {
+
+            ul {
+                width: 225px;
+            }
+
+            input[type=text] {
+                width: 225px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .AddPackagePage {
+
+        .form-submit {
+
+            ul {
+                width: 200px;
+            }
+
+            input[type=text] {
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .AddPackagePage {
+        height: 90vh;
+
+        .input_country {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            ul {
+                width: 350px;
+                            }
+
+            input[type=text] {
+                width: 350px;
+            }
+        }
+
+        .search-info {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            input[type=text] {
+                width: 350px;
+            }
+        }
+
+        .transport-info {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            input[type=text] {
+                width: 350px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 515px) {
+    .AddPackagePage {
+
+        .input_country {
+
+            ul {
+                width: 250px;
+            }
+
+            input[type=text] {
+                width: 250px;
+            }
+        }
+
+        .search-info {
+
+            input[type=text] {
+                width: 250px;
+            }
+        }
+
+        .transport-info {
+
+            input[type=text] {
+                width: 250px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .AddPackagePage {
+
+        .input_country {
+
+            ul {
+                width: 150px;
+            }
+
+            input[type=text] {
+                width: 150px;
+            }
+        }
+
+        .search-info {
+
+            input[type=text] {
+                width: 150px;
+            }
+        }
+
+        .transport-info {
+
+            input[type=text] {
+                width: 150px;
+            }
+        }
+    }
+}

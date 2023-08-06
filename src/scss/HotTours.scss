@@ -1,0 +1,196 @@
+$text-color: rgb(74, 71, 71);
+$text-font-size: 30px;
+
+@mixin selection {
+    ::selection {
+        @content;
+    }
+}
+
+
+.HotTours {
+
+    h2 {
+        color: $text-color;
+        font-size: $text-font-size;
+        text-align: center;
+        margin: 5rem auto;
+    }
+
+    @include selection {
+        color: #fff;
+        background: #a99e03;
+    }
+
+    .hotTours-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .hotTours {
+            margin: 15px;
+            width: 27%;
+            height: 70vh;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .info {
+                text-align: center;
+
+                h3 {
+                    color: $text-color;
+                    font-size: 18px;
+                    margin: 25px auto;
+                }
+
+                p {
+                    color: $text-color;
+                    font-size: 15px;
+                    line-height: 27px;
+                    width: 90%;
+                }
+
+                .location_btn {
+                    color: #fff;
+                    background-color: #a99e03;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    font-size: 10px;
+                    line-height: 49px;
+                    font-weight: bold;
+                    border: none;
+                    margin: 25px auto;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: $text-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .scroll-btn {
+        position: relative;
+        z-index: 1001;
+    }
+
+    .scroll-hide {
+        opacity: 0;
+        transition: all .5s ease;
+    }
+
+    .scroll-show {
+        opacity: 1;
+        transition: all .8s ease;
+    }
+
+    .scrollup {
+        color: #c3b8b8;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 10%;
+        right: 25px;
+        border: 2px solid #c3b8b8;
+        border-radius: 50%;
+        padding: 14px 20px;
+        z-index: 1001;
+        font-size: 1.2rem;
+        font-weight: 700;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .scrollup:hover {
+        background: #a99e03;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .HotTours {
+        .hotTours-box {
+            .hotTours {
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .HotTours {
+        h2 {
+            margin: 2rem auto 0;
+        }
+
+        .hotTours-box {
+            flex-wrap: wrap;
+
+            .hotTours {
+                width: 80%;
+                margin: 160px 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .HotTours {
+        h2 {
+            font-size: 26px;
+        }
+        .hotTours-box {
+            .hotTours {
+                margin: 120px 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .HotTours {
+        h2 {
+            font-size: 21px;
+            margin: 1rem auto 0;
+        }
+
+        .hotTours-box {
+            .hotTours {
+                margin: 50px 0;
+
+                .info {
+                    .location_btn {
+                        font-size: .6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .HotTours {
+        .hotTours-box {
+            .hotTours {
+                margin: 25px 0;
+
+                .info {
+                    h3 {
+                        font-size: 16px;
+                    }
+
+                    p {
+                        font-size: 13px;
+                        line-height: 23px;
+                    }
+                }
+            }
+        }
+    }
+}

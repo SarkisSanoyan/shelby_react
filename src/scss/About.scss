@@ -1,0 +1,46 @@
+$text-color: rgb(74, 71, 71);
+$text-font-size: 1rem;
+
+
+.About {
+    position: relative;
+
+    h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 5rem;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+    }
+}
+
+
+@media screen and (max-width: 976px) {
+    .About {
+        h2 {
+            font-size: 4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .About {
+        h2 {
+            font-size: 3rem;
+        }
+
+        .about-img {
+            height: 60vh;
+        }
+    }
+}
+

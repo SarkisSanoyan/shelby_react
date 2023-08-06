@@ -1,0 +1,890 @@
+$text-color: rgb(74, 71, 71);
+$text-font-size: 1rem;
+
+
+.BookingPage {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+
+    .background {
+        background-image: url(../../public/images/blue-sky.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 15vh;
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto;
+        gap: .5rem;
+        background: #ffb700;
+        width: 82%;
+        height: 10vh;
+        border-radius: .3rem;
+    }
+
+    .check-country {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        font-size: $text-font-size;
+        border-radius: .3rem;
+        padding: .3rem;
+        text-align: center;
+        border: none;
+        position: relative;
+
+        .icon {
+            color: $text-color;
+            font-size: 1.5rem;
+        }
+
+        input[type=text] {
+            color: $text-color;
+            font-size: $text-font-size;
+            width: 450px;
+            padding: .8rem 1rem;
+            border: none;
+        }
+
+        ul {
+            position: absolute;
+            width: 470px;
+            box-shadow: 0 1rem 1rem rgba(0, 0, 0, .5);
+            max-height: 300px;
+            overflow-y: scroll;
+
+            li {
+                list-style-type: none;
+                color: $text-color;
+                font-size: $text-font-size;
+                background-color: whitesmoke;
+                padding: .5rem;
+                text-align: left;
+                border-bottom: 1px solid $text-color;
+                border-radius: .3rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $text-color;
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+
+    .check-date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        font-size: $text-font-size;
+        border-radius: .3rem;
+        padding: .3rem;
+        gap: .5rem;
+        text-align: center;
+
+
+        input {
+            color: $text-color;
+            font-size: $text-font-size;
+            width: 135px;
+            padding: .1rem;
+            border: none;
+            text-align: center;
+        }
+    }
+
+    .check-person {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        font-size: $text-font-size;
+        border-radius: .3rem;
+        padding: .3rem;
+        gap: .5rem;
+        text-align: center;
+
+        span {
+            font-size: .7rem;
+            cursor: pointer;
+        }
+
+        input {
+            color: $text-color;
+            font-size: $text-font-size;
+            width: 50px;
+            padding: .2rem;
+            border: none;
+            text-align: center;
+        }
+    }
+
+    .childage-container {
+        position: absolute;
+        top: 28%;
+        right: 22.5%;
+        background: #ffb700;
+        width: 250px;
+        border-radius: .3rem;
+        // padding: .2rem;
+        // margin: .2rem;
+
+
+        select {
+            width: 50px;
+            padding: .1rem;
+            font-size: $text-font-size;
+            color: $text-color;
+        }
+    }
+
+    .search-btn {
+        color: whitesmoke;
+        background: #006ce4;
+        font-size: $text-font-size;
+        padding: 1rem 3rem;
+        border-radius: .3rem;
+        cursor: pointer;
+    }
+
+    .Tour {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $text-color;
+        background: #ffb700;
+        margin: .3rem auto;
+        gap: .5rem;
+        padding: 1rem 2rem;
+        width: 82%;
+        height: 2vh;
+        border-radius: .3rem;
+
+        .tour-name {
+            color: $text-color;
+            font-size: $text-font-size;
+            font-weight: bold;
+            padding: .3rem;
+        }
+
+        .tour-hotel {
+            color: $text-color;
+            font-size: $text-font-size;
+            font-weight: bold;
+            padding: .3rem;
+        }
+
+        .tour-transport_depart {
+            color: $text-color;
+            font-size: $text-font-size;
+            font-weight: bold;
+            padding: .3rem;
+        }
+
+        .tour-transport_arrive {
+            color: $text-color;
+            font-size: $text-font-size;
+            font-weight: bold;
+            padding: .3rem;
+        }
+
+        .tour-detail-btn {
+            color: whitesmoke;
+            background: #006ce4;
+            font-size: .7rem;
+            padding: .2rem 1rem;
+            border-radius: .3rem;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1350px) {
+    .BookingPage {
+
+        .check-country {
+            .icon {
+                font-size: 1.3rem;
+            }
+
+            input[type=text] {
+                width: 350px;
+                padding: .8rem;
+            }
+
+            ul {
+                width: 370px;
+            }
+        }
+
+        .check-date {
+            input {
+                width: 8rem;
+            }
+        }
+
+        .check-person {
+            span {
+                font-size: .5rem;
+            }
+
+            input {
+                width: 2.8rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .BookingPage {
+
+        .check-country {
+            input[type=text] {
+                width: 280px;
+            }
+
+            ul {
+                width: 300px;
+            }
+        }
+
+        .childage-container {
+            right: 24%;
+        }
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .BookingPage {
+
+        .check-country {
+            .icon {
+                font-size: 1.1rem;
+            }
+
+            input[type=text] {
+                width: 250px;
+            }
+
+            ul {
+                width: 270px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .BookingPage {
+
+        .check-country {
+            .icon {
+                display: none;
+            }
+
+            input[type=text] {
+                font-size: .9rem;
+                width: 225px;
+            }
+
+            ul {
+                font-size: .9rem;
+                width: 230px;
+                max-height: 200px;
+
+                li {
+                    font-size: .9rem;
+                }
+            }
+        }
+
+        .check-date {
+            font-size: .9rem;
+
+            input {
+                font-size: .9rem;
+                width: 7rem;
+            }
+        }
+
+        .check-person {
+            font-size: .9rem;
+
+            input {
+                font-size: .9rem;
+            }
+        }
+
+        .childage-container {
+            right: 28%;
+            width: 200px;
+
+            select {
+                width: 40px;
+                font-size: .9rem;
+            }
+        }
+
+        .Tour {
+            .tour-name {
+                font-size: .8rem;
+            }
+
+            .tour-hotel {
+                font-size: .8rem;
+            }
+
+            .tour-transport_depart {
+                font-size: .8rem;
+            }
+
+            .tour-transport_arrive {
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .BookingPage {
+
+        .check-country {
+            input[type=text] {
+                width: 200px;
+                padding: .55rem;
+            }
+
+            ul {
+                width: 200px;
+            }
+        }
+
+        .check-date {
+            font-size: .8rem;
+
+            input {
+                font-size: .8rem;
+            }
+        }
+
+        .check-person {
+            font-size: .8rem;
+
+            input {
+                font-size: .8rem;
+            }
+        }
+
+        .childage-container {
+            right: 26%;
+        }
+
+        .search-btn {
+            font-size: .9rem;
+            padding: .9rem 2.7rem;
+        }
+
+        .Tour {
+            .tour-name {
+                font-size: .7rem;
+            }
+
+            .tour-hotel {
+                font-size: .7rem;
+            }
+
+            .tour-transport_depart {
+                font-size: .7rem;
+            }
+
+            .tour-transport_arrive {
+                font-size: .7rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .BookingPage {
+
+        .check-date {
+            input {
+                width: 6rem;
+            }
+        }
+
+        .check-person {
+            span {
+                font-size: .4rem;
+            }
+
+            input {
+                width: 2.4rem;
+            }
+        }
+
+        .childage-container {
+            select {
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 965px) {
+    .BookingPage {
+
+        .check-country {
+            input[type=text] {
+                width: 175px;
+            }
+
+            ul {
+                width: 175px;
+            }
+        }
+
+        .check-date {
+            input {
+                width: 5rem;
+            }
+        }
+
+        .check-person {
+            input {
+                width: 2.2rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 889px) {
+    .BookingPage {
+
+        .check-country {
+            input[type=text] {
+                width: 135px;
+            }
+
+            ul {
+                width: 135px;
+
+                li {
+                    font-size: .8rem;
+                }
+            }
+        }
+
+        .check-date {
+            input {
+                width: 4rem;
+            }
+        }
+
+        .check-person {
+            input {
+                width: 2.2rem;
+            }
+        }
+
+        .search-btn {
+            font-size: .8rem;
+            padding: .9rem 1.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 757px) {
+    .BookingPage {
+
+        .check-country {
+            input[type=text] {
+                width: 115px;
+            }
+
+            ul {
+                width: 115px;
+            }
+        }
+
+        .check-date {
+            font-size: .8rem;
+
+            input {
+                width: 3rem;
+            }
+        }
+
+        .check-person {
+            input {
+                width: 2.2rem;
+            }
+        }
+
+        .childage-container {
+            right: 28%;
+            width: 180px;
+
+            select {
+                width: 35px;
+            }
+        }
+
+        .search-btn {
+            font-size: .8rem;
+            padding: .9rem 1.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 727px) {
+    .BookingPage {
+
+        .check-date {
+            font-size: .7rem;
+
+            input {
+                width: 3rem;
+            }
+        }
+
+        .check-person {
+            font-size: .7rem;
+
+            input {
+                width: 2rem;
+            }
+        }
+
+        .childage-container {
+            right: 27%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 697px) {
+    .BookingPage {
+
+        .check-country {
+
+            input[type=text] {
+                width: 90px;
+            }
+
+            ul {
+                width: 90px;
+            }
+        }
+
+        .check-date {
+
+            input {
+                width: 1.8rem;
+            }
+        }
+
+        .check-person {
+
+            input {
+                width: 1.5rem;
+            }
+        }
+
+        .search-btn {
+            font-size: .7rem;
+            padding: .9rem 1.5rem;
+        }
+
+        .Tour {
+            .tour-name {
+                font-size: .5rem;
+            }
+
+            .tour-hotel {
+                font-size: .5rem;
+            }
+
+            .tour-transport_depart {
+                font-size: .5rem;
+            }
+
+            .tour-transport_arrive {
+                font-size: .5rem;
+            }
+
+            .tour-detail-btn {
+                font-size: .5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 621px) {
+    .BookingPage {
+        .search {
+            flex-direction: column;
+            height: 38vh;
+        }
+
+        .check-country {
+
+            input[type=text] {
+                width: 410px;
+                font-size: .8rem;
+            }
+
+            ul {
+                width: 400px;
+
+                li {
+                    font-size: .8rem;
+                }
+            }
+        }
+
+        .check-date {
+            font-size: .8rem;
+
+            input {
+                width: 200px;
+                font-size: .8rem;
+            }
+        }
+
+        .check-person {
+            font-size: .8rem;
+
+            input {
+                width: 120px;
+                font-size: .8rem;
+            }
+        }
+
+        .childage-container {
+            top: 56%;
+            right: 15%;
+            width: 200px;
+
+            select {
+                width: 40px;
+            }
+        }
+
+        .search-btn {
+            font-size: .8rem;
+            padding: 1rem 11.2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 531px) {
+    .BookingPage {
+        .search {
+            height: 34vh;
+        }
+
+        .check-country {
+
+            input[type=text] {
+                width: 350px;
+                font-size: .7rem;
+            }
+
+            ul {
+                width: 350px;
+
+                li {
+                    font-size: .7rem;
+                }
+            }
+        }
+
+        .check-date {
+            font-size: .7rem;
+
+            input {
+                width: 170px;
+                font-size: .7rem;
+            }
+        }
+
+        .check-person {
+            font-size: .7rem;
+
+            input {
+                width: 100px;
+                font-size: .8rem;
+            }
+        }
+
+        .childage-container {
+            top: 52%;
+            width: 180px;
+
+            select {
+                width: 35px;
+            }
+        }
+
+        .search-btn {
+            font-size: .8rem;
+            padding: 1rem 9.5rem;
+        }
+
+        .Tour {
+            .tour-name {
+                font-size: .45rem;
+            }
+
+            .tour-hotel {
+                font-size: .45rem;
+            }
+
+            .tour-transport_depart {
+                font-size: .45rem;
+            }
+
+            .tour-transport_arrive {
+                font-size: .45rem;
+            }
+
+            .tour-detail-btn {
+                font-size: .45rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 457px) {
+    .BookingPage {
+        .search {
+            height: 34vh;
+        }
+
+        .check-country {
+
+            input[type=text] {
+                width: 280px;
+            }
+
+            ul {
+                width: 280px;
+            }
+        }
+
+        .check-date {
+
+            input {
+                width: 135px;
+            }
+        }
+
+        .check-person {
+
+            input {
+                width: 75px;
+            }
+        }
+
+        .search-btn {
+            font-size: .8rem;
+            padding: 1rem 7rem;
+        }
+
+        .Tour {
+            .tour-name {
+                font-size: .4rem;
+            }
+
+            .tour-hotel {
+                font-size: .4rem;
+            }
+
+            .tour-transport_depart {
+                font-size: .4rem;
+            }
+
+            .tour-transport_arrive {
+                font-size: .4rem;
+            }
+
+            .tour-detail-btn {
+                font-size: .4rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 401px) {
+    .BookingPage {
+        .search {
+            height: 31vh;
+        }
+
+        .check-country {
+
+            input[type=text] {
+                width: 180px;
+                padding: .2rem;
+            }
+
+            ul {
+                width: 180px;
+            }
+        }
+
+        .check-date {
+
+            input {
+                width: 85px;
+                padding: 0;
+            }
+        }
+
+        .check-person {
+
+            input {
+                width: 42px;
+                padding: 0;
+            }
+        }
+
+        
+        .childage-container {
+            top: 49%;
+            width: 150px;
+
+            select {
+                width: 30px;
+                font-size: .7rem;
+            }
+        }
+
+        .search-btn {
+            font-size: .7rem;
+            padding: .8rem 4.25rem;
+        }
+
+        .Tour {
+
+            .tour-transport_depart {
+                display: none;
+            }
+
+            .tour-transport_arrive {
+                display: none;
+            }
+        }
+    }
+}
